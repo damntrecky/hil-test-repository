@@ -2,6 +2,15 @@
 
 The repository is to help initiate a partial transformation of a Java application due to a first party (1p) dependency.
 
+## Pre-requisites
+
+1. You need Java 8 installed
+2. You need your local terminal `JAVA_HOME` path to be set to Java 8. You can verify with `java -version`
+3. You need [maven](https://maven.apache.org/) >3.95
+4. You need AWS Toolkit and IDE installed
+- [VSCode](https://aws.amazon.com/visualstudiocode/)
+- [IntelliJ](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/welcome.html)
+
 #### [java-8-test-application](./java-8-test-application/)
 
 This is the main application.
@@ -14,8 +23,9 @@ This is the main 1p dependency definition
 
 When submitting this repository for a transformation upgrade using [Amazon Q Transform](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/code-transformation.html), you should not need to compile or do anything. You should:
 
-1. Open the IDE in the [java-8-test-application](./java-8-test-application/) and submit a job for this root pom.xml module
-2. TBD 
+1. Open this directory and install the 1p-dependency `cd java-8-1p-dependency` and run `mvn clean install` to compile the module
+2. Open the IDE in the [java-8-test-application](./java-8-test-application/) and the root folder should be "application". Once again run `mvn clean install`
+3. Open the Amazon Q chat panel and submit a job for this root pom.xml module with the `/transform` command in the chat
 
 ### IntelliJ
 
