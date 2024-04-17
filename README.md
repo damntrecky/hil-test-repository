@@ -17,7 +17,16 @@ This is the main application.
 
 #### [java-8-test-1p-dependency](./java-8-test-1p-dependency/)
 
-This is the main 1p dependency definition
+This is the main 1p dependency definition.
+
+1. `cd java-8-test-1p-dependency`
+2. run `mvn clean install` to set up this package
+
+#### [java-17-only-dependency](./java-17-only-dependency/)
+
+This will output the version upgrades for java-8-test-1p-dependency and will mimic your local maven central accessible to ONLY your machine
+
+1. run `mvn clean install` to 
 
 ## Usage
 
